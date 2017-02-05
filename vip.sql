@@ -375,7 +375,7 @@ CREATE TABLE `liaison` (
   `VIP_NUMERO` int(11) NOT NULL,
   `VIP_VIP_NUMERO` int(11) NOT NULL,
   `DATE_EVENEMENT` datetime NOT NULL,
-  `LIAISON_MOTIFFIN` varchar(20) DEFAULT NULL
+  `LIAISON_MOTIFFIN` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -384,11 +384,11 @@ CREATE TABLE `liaison` (
 
 INSERT INTO `liaison` (`VIP_NUMERO`, `VIP_VIP_NUMERO`, `DATE_EVENEMENT`, `LIAISON_MOTIFFIN`) VALUES
 (19, 34, '2002-01-04 00:00:00', 'Tromperie'),
-(24, 26, '2006-02-01 00:00:00', NULL),
+(24, 26, '2006-02-01 00:00:00', 'aucune raison'),
 (24, 26, '2009-12-25 00:00:00', 'Ne passe pas au S4'),
 (26, 27, '2006-02-01 00:00:00', 'Trop beau'),
-(26, 27, '2009-12-29 00:00:00', NULL),
-(34, 11, '2010-01-03 00:00:00', '');
+(26, 27, '2009-12-29 00:00:00', 'A trouvé mieux'),
+(34, 11, '2010-01-03 00:00:00', 'Ne se suportaient plus');
 
 -- --------------------------------------------------------
 
