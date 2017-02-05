@@ -1,4 +1,4 @@
-// remerciements à Théo Gros © étudiant de DUT2 (2015-16) pour la mise au point de cette partie. test
+// remerciements à Théo Gros © étudiant de DUT2 (2015-16) pour la mise au point de cette partie.
 
 var moment = require('moment');
 
