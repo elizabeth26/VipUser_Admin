@@ -4,10 +4,10 @@
   "private": true,
   "version": "0.1.4",
   "dependencies": {
-    "express": ">4",
+    "express": ">4.13",
     "express-handlebars": "*",
     "express-session": ">1.12",
-    "cookie-parser": ">1.4",
+    "cookie-parser": ">=1.4",
     "body-parser": ">1.10",
     "mysql": "*",
     "crypto": "~0.0",
