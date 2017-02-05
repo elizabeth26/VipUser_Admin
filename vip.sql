@@ -1,7 +1,7 @@
 -- phpMyAdmin SQL Dump
 -- version 4.6.4deb1
 -- https://www.phpmyadmin.net/
---
+-- © MC
 -- Client :  localhost:3306
 -- Généré le :  Dim 05 Février 2017 à 11:26
 -- Version du serveur :  5.7.17-0ubuntu0.16.10.1
