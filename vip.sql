@@ -535,11 +535,11 @@ CREATE TABLE `photo` (
 --
 
 INSERT INTO `photo` (`PHOTO_NUMERO`, `VIP_NUMERO`, `PHOTO_SUJET`, `PHOTO_COMMENTAIRE`, `PHOTO_ADRESSE`) VALUES
-(1, 1, '30/01/00', 'Cinevile Studios', 'smith.jpg'),
-(1, 2, '14/03/99', 'Tournage de Cannes 9', 'caunes.jpg'),
-(1, 3, '14/02/02', 'Dernier Film de Wood', 'allen.jpg'),
-(1, 4, '20/06/01', 'Maison d\'Ophélie', 'barr.jpg'),
-(1, 5, '10/05/01', 'Fête des fous', 'berry2.jpg'),
+(1, 1, '30/01/10', 'Cinevile Studios', 'smith.jpg'),
+(1, 2, '14/03/10', 'Tournage de Cannes 9', 'caunes.jpg'),
+(1, 3, '14/02/12', 'Dernier Film de Wood', 'allen.jpg'),
+(1, 4, '20/06/16', 'Maison d\'Ophélie', 'barr.jpg'),
+(1, 5, '10/05/15', 'Fête des fous', 'berry2.jpg'),
 (1, 6, 'Juste avant de rendre le projet tut', 'grande solitude en fin de S3', 'bonnaire.jpg'),
 (1, 7, 'Vient de rentrer au S4', 'Pendant le S4 en cours de NODE.JS', 'bouchez.jpg'),
 (1, 8, 'Essaye de compiler un programme en C', 'Premier cours du S1 avec TM', 'branagh.jpg'),
@@ -566,7 +566,7 @@ INSERT INTO `photo` (`PHOTO_NUMERO`, `VIP_NUMERO`, `PHOTO_SUJET`, `PHOTO_COMMENT
 (1, 29, 'Photo type identite', 'En retard à un cours de comm', 'bruni.jpg'),
 (1, 30, 'Son plus beau profil', 'Son plus beau profil', 'ruiz.jpg'),
 (1, 31, 'Son plus beau profil', 'Son plus beau profil', 'leconte.jpg'),
-(1, 32, 'sujet', 'commentaire', 'ford.jpg'),
+(1, 32, 'Avec SR', 'Pendant un TD de gestion', 'ford.jpg'),
 (1, 33, 'Pendant le tournage coup de sirocco', 'photo ancienne', 'arcady.jpg'),
 (1, 34, 'Photo identité', 'Devant le bureau du chef', 'laurent.jpg'),
 (1, 35, 'Photo type identite', 'Convoqué dans le bureau du chef', 'saintlaurent.jpg'),
