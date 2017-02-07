@@ -11,7 +11,7 @@ Le serveur sera à l'écoute du port 6800.<br />
 Le fichier config.db contient les paramètres pour la base MySQL<br /><br />
 
 Pour cloner le dépôt, vous pouvez taper :<br />
-git clone https://gitlab.com/MiCha/sixvoix.git votreRep<br /><br />
+git clone https://gitlab.com/MiCha/vip.git votreRep<br /><br />
 
 Le dépôt ne contient pas les modules nécessaires au fonctionnement de l'application <br />
 
