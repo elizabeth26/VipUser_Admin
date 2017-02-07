@@ -14,7 +14,7 @@ Pour cloner le dépôt, vous pouvez taper :<br />
 git clone https://gitlab.com/MiCha/vip.git votreRep<br /><br />
 
 Le dépôt ne contient pas les modules nécessaires au fonctionnement de l'application <br />
-
+test
 appHelpers contient quelques fonctions bien utiles.<br />
  （︶︿︶）<br /><br />
 
