@@ -1,11 +1,11 @@
-var express         = require('express'),
+let express         = require('express'),
     session         = require('express-session'),
     cookieParser    = require('cookie-parser'),
     bodyParser      = require('body-parser'), //pour récupérer les résultats des post
     http            = require('http'),
     path            = require('path');
 
-var app = express();
+let app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('port', 6800);
@@ -30,9 +30,9 @@ app.use(function(request, response, next){
     next();
 });
 
-var exphbs = require('express-handlebars');
+let exphbs = require('express-handlebars');
 app.set('view engine', 'handlebars'); //nom de l'extension des fichiers
-var handlebars  = require('./helpers/handlebars.js')(exphbs); //emplacement des helpers
+let handlebars  = require('./helpers/handlebars.js')(exphbs); //emplacement des helpers
 // helpers : extensions d'handlebars
 
 app.engine('handlebars', handlebars.engine);

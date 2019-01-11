@@ -6,9 +6,9 @@
 *
 */
 
-var mysql = require('mysql'); // voir https://github.com/felixge/node-mysql/
+let mysql = require('mysql'); // voir https://github.com/felixge/node-mysql/
 
-var pool  = mysql.createPool({
+let pool  = mysql.createPool({
   host     : 'localhost',
   user     : 'bd',
   password : 'bede',
