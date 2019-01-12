@@ -4,19 +4,19 @@
   "private": true,
   "version": "0.1.4",
   "dependencies": {
-    "express": ">4.13",
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "cookie-parser": ">=1.4",
+    "crypto": "*",
+    "express": "^4.16.4",
     "express-handlebars": "*",
     "express-session": ">1.12",
-    "cookie-parser": ">=1.4",
-    "body-parser": ">1.10",
-    "mysql": "*",
-    "crypto": "~0.0",
-    "string": ">3.0",
-    "unidecode": "*",
     "moment": "~2.11",
-    "async": ">0.9"
+    "mysql": "2.16.0",
+    "string": ">3.0",
+    "unidecode": "*"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "*"
   }
 }
