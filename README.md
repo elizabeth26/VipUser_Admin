@@ -7,8 +7,9 @@ Vous aurez aussi un jeu d'essai (réaliste mais pas exact).<br />
 <b>(Some small jokes ☺ )</b><br />
 
 Pour démarrer le serveur, taper "node app".<br />
-Le serveur sera à l'écoute du port 6800.<br />
-Le fichier config.db contient les paramètres pour la base MySQL<br /><br />
+Le serveur sera à l'écoute du port 6800.<br /><br />
+Le fichier config.db contient les paramètres pour la base MySQL<br />
+Si vous le modifiez merci de le remettre aux valeurs initiales avant de rendre votre travail <br /><br /><br />
 
 Pour cloner le dépôt, vous pouvez taper :<br />
 git clone https://gitlab.com/MiCha/vip.git votreRep<br /><br />
