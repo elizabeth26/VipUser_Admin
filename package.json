@@ -7,7 +7,6 @@
     "async": "^2.6.1",
     "body-parser": "^1.18.3",
     "cookie-parser": ">=1.4",
-    "crypto": "*",
     "express": "^4.16.4",
     "express-handlebars": "*",
     "express-session": ">1.12",
