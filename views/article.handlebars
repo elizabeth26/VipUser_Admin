@@ -1,0 +1,10 @@
+<div>
+    <h2>articles</h2>
+    <p>Coississez un vip pour voir les articles le concernant</p>
+</div>
+<div>
+    <h1>VIPs</h1>
+    {{#each vip}}
+        <a href="/articles/{{this.VIP_NUMERO}}">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</a><br>
+    {{/each}}
+</div>

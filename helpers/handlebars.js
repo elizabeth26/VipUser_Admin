@@ -17,7 +17,7 @@ function hbsHelpers(handlebars) {
             // exemple d'utilisation dans handlebars {{formatDate vip.VIP_NAISSANCE 'MMMM YYYY' }}
             // --> 05 novembre 1978
             formatDate: function (date, format) {
-                moment.updateLocale('fr', { // POUR AVOIR LA DATE EN FRANCAIS
+                moment.locale('fr', { // POUR AVOIR LA DATE EN FRANCAIS
                     months: 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
                     monthsShort: 'janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.'.split('_'),
                     weekdays: 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
@@ -88,6 +88,8 @@ function hbsHelpers(handlebars) {
                         return (v1 && v2) ? options.fn(this) : options.inverse(this);
                     case '||':
                         return (v1 || v2) ? options.fn(this) : options.inverse(this);
+                    case '!=':
+                        return (v1 != v2) ? options.fn(this) : options.inverse(this);
                     default:
                         return options.inverse(this);
                 }

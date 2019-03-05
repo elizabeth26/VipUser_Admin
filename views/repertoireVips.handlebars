@@ -1,1 +1,139 @@
 <h1> Mettre ici la première lettre du nom des VIPs </h1>
+<label><b>Cliquez sur une lettre:</b></label>
+{{#each lettre}}
+    <a href="/repertoire/{{this.lettre}}">{{this.lettre}}</a>
+{{/each}}
+
+{{#each star}}
+    <div>
+        <a href="/repertoire/vip/{{this.VIP_NUMERO}}">
+            <img src="/images/vip/{{this.PHOTO_ADRESSE}}"/>
+            <p>{{this.VIP_NOM}} {{this.VIP_PRENOM}}</p>
+        </a>
+    </div>
+{{/each}}
+
+<img src="/images/vip/{{premiereImage.PHOTO_ADRESSE}}" alt="">
+{{#each infoStar}}
+    <p><b>Nom</b> {{this.VIP_NOM}} {{this.VIP_PRENOM}}</p>
+    <p><b>Date de naissance : </b>{{formatDate this.VIP_NAISSANCE  'dddd D MMMM YYYY'}}</p>
+    <p><b>Nationalité</b> {{this.NATIONALITE_NOM}}</p>
+{{/each}}
+{{#if InfoActeur}}
+    <p><b>Profession :</b>
+        {{#each infoStar}}
+            {{#ifCond this.VIP_SEXE '==''M'}}
+                acteur
+            {{else}}
+                actrice
+            {{/ifCond}}
+        {{/each}}
+    </p>
+    <p><b>Principal(aux) film(s) : </b>
+    {{#each InfoActeur}}
+        {{this.FILM_TITRE}}  ({{formatDate this.FILM_DATEREALISATION  'MMMM YYYY'}}) de
+        <div class="tooltip"><a href="/repertoire/vip/{{this.VIP_NUMERO}}">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</a>
+            <span class="tooltiptext"><img src="/images/vip/{{this.PHOTO_ADRESSE}}" alt="" height="50px">{{this.VIP_PRENOM}} {{this.VIP_NOM}} {{this.txt}}</span>
+        </div>
+        <br>
+    {{/each}}
+    </p>
+{{/if}}
+
+{{#if InfoChanteur}}
+    <p><b>Profession :</b>
+        {{#each infoStar}}
+            {{#ifCond this.VIP_SEXE '==''M'}}
+                chanteur
+            {{else}}
+                chanteuse
+            {{/ifCond}}
+        {{/each}}
+         ({{InfoChanteur.0.CHANTEUR_SPECIALITE}})
+    </p>
+    <p><b>Principal(aux) album(s) : </b>
+    {{#each InfoChanteur}}
+        {{this.ALBUM_TITRE}} ({{formatDate this.ALBUM_DATE  'MMMM YYYY'}}) {{this.MAISONDISQUE_NOM}}<br>
+    {{/each}}
+    </p>
+{{/if}}
+{{#if InfoMannequin}}
+    <p><b>Profession :</b> Mannequin</p>
+    <p><b>Principal(aux) défilé(s) : </b>
+    {{#each InfoMannequin}}
+        {{this.DEFILE_LIEU}} ({{formatDate this.DEFILE_DATE  'MMMM YYYY'}})
+        <div class="tooltip"><a href="/repertoire/vip/{{this.VIP_NUMERO}}">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</a>
+            <span class="tooltiptext"><img src="/images/vip/{{this.PHOTO_ADRESSE}}" alt="" height="50px">{{this.VIP_PRENOM}} {{this.VIP_NOM}} {{this.txt}}</span>
+        </div>
+    {{/each}}
+    </p>
+{{/if}}
+{{#if infoRealisateur}}
+    <p><b>Profession :</b>
+        {{#each infoStar}}
+            {{#ifCond this.VIP_SEXE '==''M'}}
+                Realisateur
+            {{else}}
+                Realisatrice
+            {{/ifCond}}
+        {{/each}}</p>
+    <p><b>Principal(aux) film(s) : </b>
+        {{#ifCond infoRealisateur.0.FILM_TITRE '!=''null'}}
+            {{#each infoRealisateur}}
+                {{this.FILM_TITRE}} (({{formatDate this.FILM_DATEREALISATION  'MMMM YYYY'}})
+            {{/each}}
+        {{/ifCond}}
+    </p>
+{{/if}}
+
+{{#if infoCouturier}}
+    <p><b>Profession :</b>
+        {{#each infoStar}}
+        {{#ifCond this.VIP_SEXE '==''M'}}
+            Couturier
+        {{else}}
+            Couturière
+        {{/ifCond}}
+    {{/each}}</p>
+    <p><b>Principal(aux) défilé(s) : </b>
+    {{#each infoCouturier}}
+        {{this.DEFILE_LIEU}} (({{formatDate this.DEFILE_DATE  'MMMM YYYY'}})
+    {{/each}}
+    </p>
+{{/if}}
+
+{{#if infoMariage}}
+    <p><b>Mariage(s)</b>
+    {{#each infoMariage}}
+        <div class="tooltip"><a href="/repertoire/vip/{{this.VIP_NUMERO}}">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</a>
+            <span class="tooltiptext"><img src="/images/vip/{{this.PHOTO_ADRESSE}}" alt="" height="50px">{{this.VIP_PRENOM}} {{this.VIP_NOM}} {{this.txt}}</span>
+        </div>
+        {{#if this.MARIAGE_FIN}}
+            ({{formatDate this.DATE_EVENEMENT  'MMMM YYYY'}} -> {{formatDate this.MARIAGE_FIN  'MMMM YYYY'}})
+        {{else}}
+            ({{formatDate this.DATE_EVENEMENT  'MMMM YYYY'}})
+        {{/if}}
+        <b>lieu : </b> {{this.MARIAGE_LIEU}}<br>
+    {{/each}}
+    </p>
+{{/if}}
+{{#if infoLiaison}}
+    <p><b>liaison(s)</b>
+        {{#each infoLiaison}}
+            <div class="tooltip"><a href="/repertoire/vip/{{this.VIP_NUMERO}}">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</a>
+                <span class="tooltiptext"><img src="/images/vip/{{this.PHOTO_ADRESSE}}" alt="" height="50px">{{this.VIP_PRENOM}} {{this.VIP_NOM}} {{this.txt}}</span>
+            </div>
+            ({{formatDate this.DATE_EVENEMENT  'MMMM YYYY'}})
+
+            <b>raison fin liaison : </b> {{this.LIAISON_MOTIFFIN}}<br>
+        {{/each}}
+    </p>
+
+{{/if}}
+<p><b>Qui suis-je ?</b> {{#each infoStar}}{{this.VIP_TEXTE}}{{/each}}</p>
+{{#each listeImage}}
+    {{#ifCond this.PHOTO_NUMERO '!=' 1 }}
+        <a href="/images/vip/{{this.PHOTO_ADRESSE}}" data-lightbox="{{this.PHOTO_ADRESSE}}"   data-title="{{this.PHOTO_SUJET}} - {{this.PHOTO_COMMENTAIRE}}" > <img src="/images/vip/{{this.PHOTO_ADRESSE}}" alt="" height="80px" /></a>
+    {{/ifCond}}
+
+{{/each}}

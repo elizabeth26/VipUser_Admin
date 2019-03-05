@@ -1,5 +1,5 @@
 {
-  "name": "VIPNodeJS 2019",
+  "name": "VIPNodeJS2019",
   "description": "Un exemple Express.js application utilisant MVC Template",
   "private": true,
   "version": "0.1.4",
@@ -10,6 +10,9 @@
     "express": "^4.16.4",
     "express-handlebars": "*",
     "express-session": ">1.12",
+    "jquery": "^3.3.1",
+    "lightbox": "^0.5.0",
+    "lightbox2": "^2.10.0",
     "moment": "~2.11",
     "mysql": "2.16.0",
     "string": ">3.0",
