@@ -17,7 +17,8 @@ module.exports.Repertoire = 	function(request, response){
 }
 
 module.exports.article = 	function(request, response){
-    model.arriver(
+    var data = request.params.numero;
+    model.article(
         function (err, result) {
             if (err) {
                 console.log(err);
