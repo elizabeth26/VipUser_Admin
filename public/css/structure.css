@@ -1,17 +1,22 @@
+html {
+    min-height: 100%;
+
+    
+  }
 body {
-    font-family: "Segoe UI", "DejaVu Sans",Verdana, sans-serif;
-    background-image:-webkit-linear-gradient(#9f0909, #4e0000);
-    background-image:-o-linear-gradient(#9f0909, #4e0000);
-    background-image:linear-gradient(#9f0909, #4e0000);
-    background-size: 1rem 200rem;
-    font-size:0.8em;
+   
+	background-color:#FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+    line-height:16px;
     margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #000000;
+    margin-bottom: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 .monBody #container {
-    width: 1300px;
     margin: 0 auto;
     background:#ffffff;
 }
@@ -49,15 +54,13 @@ body {
 	background:#eee;
 }
 
-.monBody #contenu {
-    padding:20px;
-    overflow: auto;
-}
-.monBody #footer {
+ footer {
+    align-self: flex-end;
+    width: 100%;
     padding: 0 10px;
     font-size:0.8em;
     text-align:center;
-    height:150px;
+    height:100px;
     background:url(/image/footer.jpg) no-repeat;
 }
 .baniere{float:left;
@@ -69,8 +72,8 @@ body {
 }
 
 #LogoNode {
-    max-height: 20%;
-    max-width: 20%;
+    max-height: 30%;
+    max-width: 30%;
 }
 
 a  {
@@ -81,29 +84,39 @@ a  {
 .traitVertical {
   border-left: 1px white solid;
 }
-.tooltip {
+.my_tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
     display: inline-block;
 }
 
-.tooltip .tooltiptext {
+.my_tooltip .my_tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 250px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
 
-    /* Position the tooltip */
+/* Position the tooltip */
     position: absolute;
     z-index: 1;
-    top: -5px;
-    right: 105%;
 }
 
-.tooltip:hover .tooltiptext {
+.my_tooltip:hover .my_tooltiptext {
     visibility: visible;
+}
+/*Mes modifications*/
+#contenu{
+    font-size: 12px;
+}
+#img-perfil{
+    width: 120px;
+    height: 150px;
+}
+#img-lst{
+    width: 8%;
+    height: 100px;
 }

@@ -1,10 +1,16 @@
-<div>
-    <h2>articles</h2>
-    <p>Coississez un vip pour voir les articles le concernant</p>
-</div>
-<div>
-    <h1>VIPs</h1>
-    {{#each vip}}
+<div class=" d-flex flex-row justify-content-between ">
+    <div class=" container w-40 border p-20">
+        <h3>Article</h3>
+         <p id="titre_choisissez">Choisissez un vip pour voir les articles le concernant</p>
+    {{#if this.ARTICLE_TITRE}}
+        dfkfsdklf
+    {{/if}}
+     
+    </div>
+    <div class=" container text-center w-20 border p-20">
+        <h1>VIPs</h1>
+        {{#each vip}}
         <a href="/articles/{{this.VIP_NUMERO}}">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</a><br>
-    {{/each}}
+        {{/each}}
+    </div>
 </div>
