@@ -24,6 +24,8 @@ module.exports = function(app){
 
 //article
     app.get('/articles',ArticleController.Repertoire);
+    app.get('/articles/:numero',ArticleController.articleCorrespondantduStar);
+    
 // tout le reste
     app.get('*', HomeController.NotFound);
     app.post('*', HomeController.NotFound);
