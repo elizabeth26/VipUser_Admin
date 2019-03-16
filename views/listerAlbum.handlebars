@@ -1,1 +1,28 @@
 <h1> Mettre ici l'album photo des stars </h1>
+{{#each photoVip}}
+    {{#if ../photoPrevious}}
+        <a href="/album/{{../num}}/{{this.vip}}/{{../photoPrevious}}"><<</a>
+    {{else}}
+        <a href="/album/{{../num}}/{{this.vip}}/1"><<</a>
+    {{/if}}
+    <img src="/images/vip/{{this.addr}}" height="150px"/>
+    {{#if ../photoNext}}
+        <a href="/album/{{../num}}/{{this.vip}}/{{../photoNext}}">>></a>
+    {{/if}}
+    <p>{{this.comm}}</p>
+{{/each}}
+{{#each photoAddr}}
+    <a href="/album/{{../num}}/{{this.vip}}/1">
+    <img src="/images/vip/{{this.addr}}" height="50px">
+    </a>
+{{/each}}
+<a href="/album/0">début</a>
+{{#if previous}}
+    <a href="/album/{{previous}}">prévious</a>
+{{else}}
+    <a href="/album/0">prévious</a>
+{{/if}}
+{{#if next}}
+    <a href="/album/{{next}}">next</a>
+{{/if}}
+<a href="/album/{{nbPageMax}}">Fin</a>

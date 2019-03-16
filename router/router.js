@@ -20,8 +20,8 @@ module.exports = function(app){
     app.get('/repertoire/:lettre', VipController.starCorrespondant);
     app.get('/repertoire/:lettre/:numero', VipController.StarInfo);
  // albums
-   app.get('/album', AlbumController.ListerAlbum);
-
+   app.get('/album/:numero', AlbumController.ListerAlbum);
+    app.get('/album/:numero/:vip/:numPhoto', AlbumController.photoVip);
 //article
     app.get('/articles',ArticleController.Repertoire);
 // tout le reste
