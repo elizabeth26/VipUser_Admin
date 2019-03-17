@@ -1,14 +1,21 @@
-<div class=" d-flex flex-row justify-content-between ">
-    <div class=" container w-40 border p-20">
-        <h3>Article</h3>
+<div class="d-flex flex-row justify-content-around ">
+    <div class="article_contenu border p-20">
+        <h6>Article</h6>
          <p id="titre_choisissez">Choisissez un vip pour voir les articles le concernant</p>
-    {{#if this.ARTICLE_TITRE}}
-        dfkfsdklf
-    {{/if}}
+            {{#if article}}
+            <script>
+               var div = document.getElementById("titre_choisissez");
+               div.style.display = "none"
+            </script>
+                 {{#each article}}
+                   <strong>{{this.ARTICLE_TITRE}}</strong>
+                   <div class="text-justify">{{this.ARTICLE_RESUME}}</div>
+                    {{/each}}
+            {{/if}}
      
     </div>
-    <div class=" container text-center w-20 border p-20">
-        <h1>VIPs</h1>
+    <div class="article_vips text-center border p-20">
+        <h4>VIPs</h4>
         {{#each vip}}
         <a href="/articles/{{this.VIP_NUMERO}}">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</a><br>
         {{/each}}

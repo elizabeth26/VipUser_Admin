@@ -1,7 +1,7 @@
 let db = require('../configDb');
 
 
-module.exports.arriver = function(callback) {
+module.exports.vip_info = function(callback) {
     db.getConnection(function(err, connexion) {
         if (!err) {
             let sql = "SELECT VIP_NUMERO,VIP_NOM,VIP_PRENOM from vip where VIP_NUMERO in (select VIP_NUMERO from apoursujet) order by VIP_NOM";
