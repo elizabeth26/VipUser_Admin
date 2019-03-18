@@ -120,9 +120,15 @@ a  {
     width: 8%;
     height: 100px;
 }
-.article_vips{width: 20%}
-.article_contenu{width: 70%}
+.article_vips,.cont_photo_all_vips{width: 20%}
+.article_contenu,.cont_foto_un_vip{width: 70%}
+
+
 #t_article{
+    background: white;
+    top: -10px;
+}
+#t_comment{
     background: white;
     top: -10px;
 }
