@@ -14,32 +14,47 @@
 </head>
 
 <body class="monBody">
-<div id="container" class="w-100">
-    <div id="header">
-        <div class="baniere"><img src="/images/sixvoix.png" alt="SIXVOIX l'encyclopédie des stars" /> </div>
-    </div>
-    <div class="menu_haut">
-        <ul>
-            <li><a href="/accueil">VIPS</a></li>
-            <li class="traitVertical"><a href="/repertoire">PHOTOS</a></li>
+    {{#if session.connecter}}
+    <div id="container" class="w-100">
+        <div id="header">
+            <div class="baniere"><img src="/images/sixvoix.png" alt="SIXVOIX l'encyclopédie des stars" /> </div>
+            <div><h2>Bonjour {{session.connecter}} <a href="/">déconnexion</a></h2></div>
+        </div>
+        <div class="menu_haut">
+            <ul>
+                <li><a href="/VIPS">VIPS</a></li>
+                <li class="traitVertical"><a href="/PHOTOS">PHOTOS</a></li>
 
-        </ul>
-    </div>
-    <div id="contenu">
-        {{{body}}}
-    </div>
+            </ul>
+        </div>
 
-</div>
-<footer>
-    L'encyclopédie des stars depuis février 2017 (en NodeJS)
-    <br />
-    © IUT du Limousin DUT Informatique année 2
-    <br />
-    Appllication réalisée par ...... (mettre vos noms)
-    <br />
-    <img src="/images/nodejs.png" id="LogoNode" alt="Logo NodeJs" title="Logo Node.JS" />
+        <div id="contenu">
+            {{{body}}}
+        </div>
+    </div>
+    <footer>
+        L'encyclopédie des stars depuis février 2017 (en NodeJS)
+        <br />
+        © IUT du Limousin DUT Informatique année 2
+        <br />
+        Appllication réalisée par ...... (mettre vos noms)
+        <br />
+        <img src="/images/nodejs.png" id="LogoNode" alt="Logo NodeJs" title="Logo Node.JS" />
 
-</footer>
+    </footer>
+    {{else}}
+        <div class="contenu_interne">
+            <form method="post" action="/">
+                <h1>Administration</h1>
+                <label>Login :</label>
+                <input name="log">
+                <label>Mot de passe</label>
+                <input name="mdp" type="password">
+                <button>annuler</button>
+                <input type="submit" value="connexion">
+            </form>
+        </div>
+    {{/if}}
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

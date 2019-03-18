@@ -7,11 +7,13 @@ let AdminController = require('./../controllers/adminController');
 // Routes
 module.exports = function(app){
 
+     app.post('/',AdminController.connextion);
+     app.get('/',AdminController.deconnexion);
 
-
+     app.get('/VIPS',VipController.ajouter);
 // Main Routes
-    app.get('/', AdminController.connextion);
-    app.get('/accueil', AdminController.connextion);
+//     app.get('/', AdminController.connextion);
+//     app.get('/accueil', AdminController.connextion);
 
 // VIP
 //     app.get('/repertoire', VipController.Repertoire);
