@@ -1,0 +1,124 @@
+html {
+    min-height: 100%;
+
+    
+  }
+body {
+   
+	background-color:#FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+    line-height:16px;
+    margin: 0;
+    margin-bottom: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.monBody #container {
+    margin: 0 auto;
+    background:#ffffff;
+}
+.monBody #header {
+    height:140px;
+    background-color:#000;
+    color:#fff;
+}
+
+.menu_haut {background-color:#000;color:#fff;margin-top:-13px;width:100%;}
+.menu_haut ul {
+	width:100%;
+	text-align:center;
+	height:30px;
+	margin-left:-50px;
+	margin-right:-50px;
+	}
+.menu_haut li {
+	text-decoration:none;
+	font-weight:bold;
+	display:inline;
+	font-size:14px;
+	padding:10px 10px 10px 10px;
+	color:#fff;
+	}
+.menu_haut li a {
+	color: #fff;
+	text-decoration: none;
+	display: inline;
+	height: 100%;
+	border: 0 none;
+}
+.menu_haut li a:hover {
+	color:#000;
+	background:#eee;
+}
+
+ footer {
+    align-self: flex-end;
+    width: 100%;
+    padding: 0 10px;
+    font-size:0.8em;
+    text-align:center;
+    height:100px;
+    background:url(/image/footer.jpg) no-repeat;
+}
+.baniere{float:left;
+  margin-top:20px;
+  margin-left:5px;
+  border:none;}
+.baniere img{
+  border:none;
+}
+
+#LogoNode {
+    max-height: 30%;
+    max-width: 30%;
+}
+
+a  {
+    text-decoration:none;
+    color:#0072ff;
+}
+
+.traitVertical {
+  border-left: 1px white solid;
+}
+.my_tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    display: inline-block;
+}
+
+.my_tooltip .my_tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+/* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.my_tooltip:hover .my_tooltiptext {
+    visibility: visible;
+}
+/*Mes modifications*/
+#contenu{
+    font-size: 12px;
+}
+#img-perfil{
+    width: 120px;
+    height: 150px;
+}
+#img-lst{
+    width: 8%;
+    height: 100px;
+}
+.article_vips{width: 20%}
+.article_contenu{width: 70%}
