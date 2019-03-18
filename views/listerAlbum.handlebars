@@ -16,13 +16,13 @@
     <img src="/images/vip/{{this.addr}}" height="50px">
     </a>
 {{/each}}
-<a href="/album/0">début</a>
+<a href="/album/0/{{vip}}/{{numPhoto}}">début</a>
 {{#if previous}}
-    <a href="/album/{{previous}}">prévious</a>
+    <a href="/album/{{previous}}/{{vip}}/{{numPhoto}}">prévious</a>
 {{else}}
-    <a href="/album/0">prévious</a>
+    <a href="/album/0/{{vip}}/{{numPhoto}}">prévious</a>
 {{/if}}
 {{#if next}}
-    <a href="/album/{{next}}">next</a>
+    <a href="/album/{{next}}/{{vip}}/{{numPhoto}}">next</a>
 {{/if}}
-<a href="/album/{{nbPageMax}}">Fin</a>
+<a href="/album/{{nbPageMax}}/{{vip}}/{{numPhoto}}">Fin</a>
