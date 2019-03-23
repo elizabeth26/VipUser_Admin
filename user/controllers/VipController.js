@@ -108,7 +108,7 @@ module.exports.StarInfo= 	function(request, response){
             response.premiereImage = result[9][0];
             //console.log(data);
             request.session.vipNum = data;
-            console.log(request.session.vipNum);
+            //console.log(request.session.vipNum);
             response.render('repertoireVips', response);
         }
     );

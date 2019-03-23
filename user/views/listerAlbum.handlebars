@@ -1,10 +1,13 @@
 <div class="d-flex flex-row justify-content-around ">
     <div class="cont_foto_un_vip p-2 border " >
     {{#each photoVip}}
+        <div class="text-center">
+            {{this.VIP_NOM}} {{this.VIP_PRENOM}}
+        </div>
         <div class="text-center mb-2">
             {{#if ../photoPrevious}}<a href="/album/{{../num}}/{{this.vip}}/{{../photoPrevious}}"><<</a> 
-            
-            {{else}} <a href="/album/{{../num}}/{{this.vip}}/1"> <<</a> {{/if}} <img src="/images/vip/{{this.addr}}" height="150px" />
+            {{/if}} 
+            <img src="/images/vip/{{this.addr}}" height="150px" />
             
             {{#if ../photoNext}}
             <a href="/album/{{../num}}/{{this.vip}}/{{../photoNext}}">>></a>
@@ -25,16 +28,18 @@
         {{/each}}
         </div>
 
-        <div>
-            <a href="/album/0/{{vip}}/{{numPhoto}}">début</a>
-            {{#if previous}}<a href="/album/{{previous}}/{{vip}}/{{numPhoto}}">prévious</a>
-            {{else}}<a href="/album/0/{{vip}}/{{numPhoto}}">prévious</a>
-            {{/if}}
-
-            {{#if next}} <a href="/album/{{next}}/{{vip}}/{{numPhoto}}">next</a>
-            {{/if}}
-
-            <a href="/album/{{nbPageMax}}/{{vip}}/{{numPhoto}}">Fin</a>
+        <div class="p-2">
+            {{#ifCond next '<=' nbPageMax}}
+                <a class="border p-1" href="/album/0/{{vip}}/{{numPhoto}}">Début</a>    
+                {{#ifCond previous '>=' 0}}<a class="border p-1" href="/album/{{previous}}/{{vip}}/{{numPhoto}}">Précedent</a>
+                {{/ifCond}}
+                 <a class="border p-1" href="/album/{{next}}/{{vip}}/{{numPhoto}}">Suivant</a>
+                <a class="border p-1" href="/album/{{nbPageMax}}/{{vip}}/{{numPhoto}}">Fin</a>
+            {{else}} 
+                <a class="border p-1" href="/album/0/{{vip}}/{{numPhoto}}">Début</a>    
+                {{#if previous}}<a class="border p-1" href="/album/{{previous}}/{{vip}}/{{numPhoto}}">Précedent</a>
+                {{/if}} 
+            {{/ifCond}}    
         </div>
     </div>
 

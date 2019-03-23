@@ -36,7 +36,7 @@ module.exports.articleCorrespondantduStar = function (request, response) {
             response.vip = result[0];
             response.article = result[1];
             response.render('article', response);
-            console.log(response.numero_vip);
+            //console.log(response.numero_vip);
 
         }
     );
