@@ -3,6 +3,9 @@ let express         = require('express'),
     cookieParser    = require('cookie-parser'),
     bodyParser      = require('body-parser'), //pour récupérer les résultats des post
     http            = require('http'),
+    util            = require('util'),
+    formidable      = require('formidable'),
+    fs              = require('fs-extra'),
     path            = require('path');
 
 let app = express();
@@ -44,4 +47,4 @@ require('./router/adminRouter')(app);
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log('Serveur Node.js en attente sur le port ' + app.get('port'));
-});
+ });

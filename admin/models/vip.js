@@ -11,4 +11,13 @@ module.exports.ajouter = function(callback) {
         }
     });
 };
-
+module.exports.getAllVip = function(callback) {
+    db.getConnection(function(err, connexion) {
+        if (!err) {
+            let sql = "select vip.VIP_NUMERO,vip.VIP_NOM,vip.VIP_PRENOM from vip order by vip.VIP_NOM,vip.VIP_PRENOM,Vip.VIP_NUMERO ;";
+            // console.log(sql);
+            connexion.query(sql, callback);
+            connexion.release();
+        }
+    });
+};

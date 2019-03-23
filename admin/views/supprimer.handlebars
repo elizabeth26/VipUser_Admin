@@ -1,0 +1,13 @@
+<div>
+    <h3>VIPs</h3>
+    <ul>
+        <li><a href="/VIPS">Ajouter</a></li>
+        <li><a href="/VIPS/Modifier">Modifier</a></li>
+        <li><a href="/VIPS/Supprimer">Supprimer</a></li>
+    </ul>
+</div>
+<select>
+    {{#each vip}}
+ <option value="{{this.VIP_NUMERO}}">{{this.VIP_NOM}} {{this.VIP_PRENOM}}</option>
+    {{/each}}
+</select>

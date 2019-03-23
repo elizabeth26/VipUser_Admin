@@ -11,6 +11,8 @@ module.exports = function(app){
      app.get('/',AdminController.deconnexion);
 
      app.get('/VIPS',VipController.ajouter);
+     app.get('/VIPS/Modifier',VipController.modifier);
+     app.get('/VIPS/Supprimer',VipController.getAllVip);
 // Main Routes
 //     app.get('/', AdminController.connextion);
 //     app.get('/accueil', AdminController.connextion);
