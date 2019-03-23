@@ -74,7 +74,7 @@ module.exports.photoVip = 	function(request, response){
 
             if (num >= 1){
                 response.previous = parseInt(num) - 1;
-                //console.log(response.previous);
+               
             }
             response.num = num;
             response.title = 'Album des stars';
