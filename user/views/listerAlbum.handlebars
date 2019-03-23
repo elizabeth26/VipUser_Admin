@@ -1,28 +1,41 @@
-<h1> Mettre ici l'album photo des stars </h1>
+<div class="d-flex flex-row justify-content-around ">
+    <div class="cont_foto_un_vip p-2 border " >
     {{#each photoVip}}
-    {{#if ../photoPrevious}}
-        <a href="/album/{{../num}}/{{this.vip}}/{{../photoPrevious}}"><<</a>
-    {{else}}
-        <a href="/album/{{../num}}/{{this.vip}}/1"><<</a>
-    {{/if}}
-    <img src="/images/vip/{{this.addr}}" height="150px"/>
-    {{#if ../photoNext}}
-        <a href="/album/{{../num}}/{{this.vip}}/{{../photoNext}}">>></a>
-    {{/if}}
-    <p>{{this.comm}}</p>
-{{/each}}
-{{#each photoAddr}}
-    <a href="/album/{{../num}}/{{this.vip}}/1">
-    <img src="/images/vip/{{this.addr}}" height="50px">
-    </a>
-{{/each}}
-<a href="/album/0/{{vip}}/{{numPhoto}}">début</a>
-{{#if previous}}
-    <a href="/album/{{previous}}/{{vip}}/{{numPhoto}}">prévious</a>
-{{else}}
-    <a href="/album/0/{{vip}}/{{numPhoto}}">prévious</a>
-{{/if}}
-{{#if next}}
-    <a href="/album/{{next}}/{{vip}}/{{numPhoto}}">next</a>
-{{/if}}
-<a href="/album/{{nbPageMax}}/{{vip}}/{{numPhoto}}">Fin</a>
+        <div class="text-center mb-2">
+            {{#if ../photoPrevious}}<a href="/album/{{../num}}/{{this.vip}}/{{../photoPrevious}}"><<</a> 
+            
+            {{else}} <a href="/album/{{../num}}/{{this.vip}}/1"> <<</a> {{/if}} <img src="/images/vip/{{this.addr}}" height="150px" />
+            
+            {{#if ../photoNext}}
+            <a href="/album/{{../num}}/{{this.vip}}/{{../photoNext}}">>></a>
+            {{/if}}
+        </div>
+        <div class=" pl-2 border ">
+            <span id="t_comment" class="position-relative">Commentaire</span>
+            <p class="text-center">{{this.comm}}</p>
+        </div>
+    {{/each}}
+    </div>
+    <div class="cont_photo_all_vips border p-2 text-center">
+          <div class="" >
+        {{#each photoAddr}}
+            <a href="/album/{{../num}}/{{this.vip}}/1">
+                <img src="/images/vip/{{this.addr}}" width="20%" height="60px">
+            </a>
+        {{/each}}
+        </div>
+
+        <div>
+            <a href="/album/0/{{vip}}/{{numPhoto}}">début</a>
+            {{#if previous}}<a href="/album/{{previous}}/{{vip}}/{{numPhoto}}">prévious</a>
+            {{else}}<a href="/album/0/{{vip}}/{{numPhoto}}">prévious</a>
+            {{/if}}
+
+            {{#if next}} <a href="/album/{{next}}/{{vip}}/{{numPhoto}}">next</a>
+            {{/if}}
+
+            <a href="/album/{{nbPageMax}}/{{vip}}/{{numPhoto}}">Fin</a>
+        </div>
+    </div>
+
+</div>

@@ -1,23 +1,30 @@
 <div class="d-flex flex-row justify-content-around ">
-    <div class="article_contenu border p-20">
-        <h6>Article</h6>
-         <p id="titre_choisissez">Choisissez un vip pour voir les articles le concernant</p>
-            {{#if article}}
-            <script>
-               var div = document.getElementById("titre_choisissez");
-               div.style.display = "none"
-            </script>
-                 {{#each article}}
-                   <strong>{{this.ARTICLE_TITRE}}</strong>
-                   <div class="text-justify">{{this.ARTICLE_RESUME}}</div>
-                    {{/each}}
-            {{/if}}
-     
+    <div class="article_contenu border pl-3 pr-3 pb-2 pt-3 position-relative">
+        <h6 id="t_article"class="position-absolute">Article</h6>
+        <p class="pt-2" id="titre_choisissez">Choisissez un vip pour voir les articles le concernant</p>
+        {{#if article}}
+        <script>
+            var div = document.getElementById("titre_choisissez");
+            div.style.display = "none"
+        </script>
+        {{#each article}}
+        <strong >{{this.ARTICLE_TITRE}}</strong>
+        <div class="text-justify">{{this.ARTICLE_RESUME}}</div>
+         <div class="d-flex flex-row justify-content-between mt-2 text-light bg-secondary p-1">
+            <div >[Ajouté le {{formatDate this.ARTICLE_DATE_INSERT  'dddd D MMMM YYYY'}}]</div>
+            <div><a class="text-light" href="/repertoire/vip/{{../numero_vip}}"> Voir sa fiche</a></div> 
+        </div>
+        {{/each}}
+
+        {{/if}}
+
+
     </div>
-    <div class="article_vips text-center border p-20">
-        <h4>VIPs</h4>
+    <div class="article_vips text-center border p-2 ">
+        <h4 class="text-light bg-dark p-2">VIPs</h4>
         {{#each vip}}
         <a href="/articles/{{this.VIP_NUMERO}}">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</a><br>
         {{/each}}
+
     </div>
 </div>

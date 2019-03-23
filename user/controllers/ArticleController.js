@@ -16,6 +16,7 @@ module.exports.Repertoire = function (request, response) {
 }
 module.exports.articleCorrespondantduStar = function (request, response) {
     var data = request.params.numero;
+    
     async.parallel([
         function (callback) {
             model.vip_info(function (err, result) { callback(null, result) });
@@ -31,10 +32,12 @@ module.exports.articleCorrespondantduStar = function (request, response) {
                 console.log(err);
                 return;
             }
+            response.numero_vip =request.params.numero;
             response.vip = result[0];
             response.article = result[1];
             response.render('article', response);
-            console.log(result[1]);
+            console.log(response.numero_vip);
+
         }
     );
 }
