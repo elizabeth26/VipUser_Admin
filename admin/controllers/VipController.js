@@ -32,7 +32,7 @@ module.exports.modifier = function(request, response){
     //       // )
 };
 module.exports.supprimer = function(request, response){
-    // response.render('repertoireVips', response);
+    let vipNum = request.body.vip;
     //  model.premiereLettreStar(
     //      function (err, result) {
     //          if (err) {

@@ -6,8 +6,11 @@
         <li><a href="/VIPS/Supprimer">Supprimer</a></li>
     </ul>
 </div>
-<select>
-    {{#each vip}}
- <option value="{{this.VIP_NUMERO}}">{{this.VIP_NOM}} {{this.VIP_PRENOM}}</option>
-    {{/each}}
-</select>
+<form method="post" action="/VIPS/Supprimer">
+    <select name="vip">
+        {{#each vip}}
+     <option value="{{this.VIP_NUMERO}}">{{this.VIP_NOM}} {{this.VIP_PRENOM}}</option>
+        {{/each}}
+    </select>
+    <input type="submit" value="supprimer">
+</form>

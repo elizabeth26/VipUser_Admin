@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bfbda5-d552-4c30-8a77-f68949a09b52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/views/supprimer.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adminView/adminCo.handlebars" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adminView/layouts/adminMain.handlebars" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adminView/notFound.handlebars" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/administration.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/administration.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controllers/VipController.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/VipController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/models/vip.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/vip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/router/adminRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/router/adminRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/Vip.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/Vip.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/supprimer.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/supprimer.handlebars" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/views/supprimer.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="153">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -46,17 +39,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/router/adminRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            <state relative-caret-position="255">
+              <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/models/vip.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="71" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="71" />
+            <state relative-caret-position="3400">
+              <caret line="200" column="32" lean-forward="true" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -64,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/controllers/VipController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            <state relative-caret-position="348">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -129,15 +122,15 @@
         <option value="$PROJECT_DIR$/admin/controllers/adminController.js" />
         <option value="$PROJECT_DIR$/admin/administration.js" />
         <option value="$PROJECT_DIR$/admin/views/surpprimer.handlebars" />
-        <option value="$PROJECT_DIR$/admin/controllers/VipController.js" />
-        <option value="$PROJECT_DIR$/admin/router/adminRouter.js" />
-        <option value="$PROJECT_DIR$/admin/models/vip.js" />
         <option value="$PROJECT_DIR$/admin/views/Vip.handlebars" />
+        <option value="$PROJECT_DIR$/admin/router/adminRouter.js" />
         <option value="$PROJECT_DIR$/admin/views/supprimer.handlebars" />
+        <option value="$PROJECT_DIR$/admin/controllers/VipController.js" />
+        <option value="$PROJECT_DIR$/admin/models/vip.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-45" />
     <option name="y" value="-30" />
     <option name="width" value="1940" />
@@ -184,6 +177,12 @@
               <item name="vip" type="b2602c69:ProjectViewProjectNode" />
               <item name="vip" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -254,15 +253,15 @@
       <workItem from="1553085205006" duration="215000" />
       <workItem from="1553088573277" duration="343000" />
       <workItem from="1553348917653" duration="3879000" />
-      <workItem from="1553353912783" duration="1124000" />
+      <workItem from="1553353912783" duration="4894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68712000" />
+    <option name="totallyTimeSpent" value="72482000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24815595" />
@@ -399,27 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/router/adminRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controllers/VipController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/models/vip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/views/Vip.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -427,10 +405,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/router/adminRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/views/supprimer.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="153">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/models/vip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controllers/VipController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/models/vip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3400">
+          <caret line="200" column="32" lean-forward="true" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
         </state>
       </provider>
     </entry>

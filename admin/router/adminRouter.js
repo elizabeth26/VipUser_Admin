@@ -13,6 +13,7 @@ module.exports = function(app){
      app.get('/VIPS',VipController.ajouter);
      app.get('/VIPS/Modifier',VipController.modifier);
      app.get('/VIPS/Supprimer',VipController.getAllVip);
+     app.post('/VIPS/Supprimer',VipController.supprimer);
 // Main Routes
 //     app.get('/', AdminController.connextion);
 //     app.get('/accueil', AdminController.connextion);
